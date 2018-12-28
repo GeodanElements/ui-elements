@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>fold-sheet demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+
+    <script type="module">
+      //import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      //import '@polymer/iron-demo-helpers/demo-snippet';
+      
+      import './src/components/demo-app.js';
+    </script>
+    <script>
+      window.process = {
+        env: {
+          NODE_ENV: 'smurf'
+        }
+      };
+      
+    </script>
+    <style>
+    html,body {
+      font-family: 'Lato', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: black;
+      margin: 0;
+    }
+    </style>
+    
+  </head>
+  <body>
+    <!--
+    <div class="vertical-section-container centered">
+      <h3>Basic fold-sheet demo</h3>
+      <demo-snippet>
+        <template>
+          -->
+        <demo-app></demo-app>
+          <!--
+        </template>
+      </demo-snippet>
+    </div>
+    -->
+  </body>
+</html>
